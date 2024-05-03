@@ -1,51 +1,54 @@
 *{
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
 }
-body{
 
-    height: 90vh;
+body{
     color: aliceblue;
+    font-family:sans-serif;
     background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
-#container{
-    height: 108%;
+
+
+.container{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    min-height:100vh;
+    width: 98vw
 }
-#box{
+
+.box{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     border: 2px solid;
-    border-radius: 5vh;
-    height: 45%;
-    width: 30%;
+    border-radius: 2rem;
+    height: 20rem;
+    width: 33rem;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 9px;
     background: linear-gradient(135deg, rgba(25, 255, 255, 0.4), rgba(255, 255, 255, 0));
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.80);
+    box-shadow:2px 2px 4px black
 }
+
 #tl{
-    
     height: 55%;
     width: 60%;
 }
 #icon{
     height: 100%;
     width: 100%;
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #deficon{
     height: 25%;
     width: 100%;
+    font-size: 7rem;
 }
 #rtop{
     display: flex;
@@ -54,26 +57,34 @@ body{
     align-items: center;
     height:69%;
     width: 40%;
+    font-size: 1.8rem;
+    margin-top: 1rem;
 }
-#bottext{
-    height: 32%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-}
 .text{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100%;
-    width: 33%;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.06rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    width: 7rem;
+    min-height: 5rem;
+    flex: shrink 1;;
 }
+
+#bottext{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    gap: 18px;
+    font-size: 1.1rem;
+}
+
 i{
-    font-size: 7em;
+    font-size: 8rem;
 }
 #deficon{
     display: flex;
@@ -81,4 +92,17 @@ i{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
+    font-size: 1.6rem;
+}
+
+#city{
+    font-size: 1.8rem;
+}
+
+#temp{
+    font-size: 2rem;
+}
+
+span{
+    margin-bottom: 1.3rem;
 }
