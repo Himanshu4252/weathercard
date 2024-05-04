@@ -7,11 +7,14 @@
 body{
     color: aliceblue;
     font-family:sans-serif;
+}
+
+html{
     background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 
-.container{
+#container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -19,9 +22,9 @@ body{
     width: 98vw
 }
 
-.box{
+#box{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     border: 2px solid;
     border-radius: 2rem;
     height: 20rem;
