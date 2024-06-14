@@ -1,4 +1,4 @@
-
+console.log("warning: this panel is for developers only, do not try to manipulate any data if you do than be prepared for the consequences(FBI knocking at the door...). if you found any bug in here please contact the site owner.");
 let apiKey = 'JYSG6TZH6UNHET3N5MC23NPQH';
 let temprature = document.getElementById("temp");
 let windSpeed = document.getElementById("windSpeed");
@@ -13,14 +13,10 @@ let celtemp = 0;
 let fTemp = 0;
 async function getWeather(){
      event.preventDefault();
-    console.log("okay");
     let city = cityInput.value.trim();
-    console.log(city);
         let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=JYSG6TZH6UNHET3N5MC23NPQH`;
     const response = await fetch(url);
-    console.log(response);
     const weatherData = await response.json();
-    console.log(weatherData);
     fTemp =  weatherData.currentConditions.temp;
     celtemp = (fTemp - 32)/1.8;
     temprature.textContent = `${celtemp.toFixed(1)}\u00B0C`;
@@ -32,5 +28,6 @@ async function getWeather(){
    
 }
 btn.addEventListener("click", getWeather);
+
 
     
