@@ -3,52 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="card.css">
+    <title>weather</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Card</title>
+    <link rel="stylesheet" href="dupC.css">
+
 </head>
 <body>
-    <div id="container">  
-    <div>
-        <form>
-        <input id="cityInput" placeholder="enter city name">
-        <button id="btn" >search</button>
-        </form>
-
-        <h4 id="alerting" >Please Enter a Valid City Name</h4>
-    </div>
-        <div id="box">
-            <div id="tl">
-
-                <div id="icon">
-                    <i class="fa-solid fa-cloud-sun"></i>
+    <div id="container">
+        <div id="searchArea">
+            <form id="inputSection">
+            <input placeholder="Enter name of you city: " name="cityName" id="cityInput" required >
+            <button type="submit" id="searchBtn" name="search">Search</button>
+            </form>
+        </div>
+        <div id="weatherBox">
+            <div id="top-col">
+                <div id="top-left">
+                    <div id="top-left-upper"><i class="fa-solid fa-cloud-sun" id="icon"></i></div>
+                    <div id="top-left-lower"><span id="weather"></span></div>
                 </div>
-
-                <div id="deficon"><h4 id="visibility"></h4></div>
-
-            </div>
-
-            <div id="rtop">
-                <div id="city"><h3  id="city1"></h3>
-                </div>
-
-            <div id="tempra"><h1 id="temp"></h1></div>
-            </div>
-
-            <div id="bottext">
-                <div class="text" >wind speed
-                    <span id="windSpeed"></span>
-                </div>
-                
-                <div class="text">cloud cover
-                    <span id="cloudCover"></span>
-                </div>
-
-                <div class="text">Humidity
-                    <span id="humidity"></span>
+                <div id="top-right">
+                    <div id="top-right-upper"><span id="cityName"></span></div>
+                    <div id="top-right-lower"><span id="temprature"></span></div>
                 </div>
             </div>
-            
+            <div id="bot-col">
+                <div id="for-windSpeed" class="bottomBoxes">Wind speed<span id="windSpeed"></span></div>
+                <div id="for-humidity" class="bottomBoxes">Humidity<span id="humidity"></span></div>
+                <div id="for-cloudCover" class="bottomBoxes">cloud Cover<span id="cloudCover"></span></div>
+            </div>
         </div>
     </div>
     <script src="weather.js"></script>
